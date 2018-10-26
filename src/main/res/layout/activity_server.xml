@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aj.dar.ServerActivity">
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:text="Enter Name of subject : " />
+
+    <EditText
+        android:id="@+id/subText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=""
+        android:layout_toRightOf="@+id/subject"
+        android:layout_toEndOf="@+id/subject" />
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/subject"
+        android:layout_alignStart="@+id/subject"
+        android:layout_below="@+id/subText"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:text="Enter Branch name : " />
+
+    <EditText
+        android:id="@+id/branchInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/subText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=""
+        android:layout_alignBottom="@+id/branch"
+        android:layout_alignLeft="@+id/subText"
+        android:layout_alignStart="@+id/subText" />
+
+    <Button
+        android:id="@+id/startServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="START SERVER"
+        android:layout_below="@+id/branch"
+        android:layout_alignLeft="@+id/branch"
+        android:layout_alignStart="@+id/branch"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp" />
+
+    <TextView
+        android:id="@+id/serverIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="IP : "
+        android:layout_below="@+id/startServer"
+        android:layout_alignLeft="@+id/branch"
+        android:layout_alignStart="@+id/branch" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/serverIp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</RelativeLayout>
