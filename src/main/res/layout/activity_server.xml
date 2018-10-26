@@ -55,7 +55,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint=""
-        android:layout_alignBottom="@+id/branch"
+        android:layout_alignTop="@+id/branch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/branch"
         android:layout_alignLeft="@+id/subText"
         android:layout_alignStart="@+id/subText" />
 
@@ -76,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="IP : "
+        android:text=""
         android:layout_below="@+id/startServer"
         android:layout_alignLeft="@+id/branch"
         android:layout_alignStart="@+id/branch" />
