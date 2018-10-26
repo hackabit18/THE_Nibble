@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public abstract class ServerActivity extends AppCompatActivity implements View.OnClickListener {
+public class ServerActivity extends AppCompatActivity implements View.OnClickListener {
 
     Server server;
     EditText sub,branch;
@@ -40,5 +40,8 @@ public abstract class ServerActivity extends AppCompatActivity implements View.O
         super.onDestroy();
         server.onDestroy();
     }
+    @Override
+    public void onClick(View v) {
 
+    }
 }
