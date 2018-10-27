@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5DBCD2"
     tools:context="com.example.aj.dar.ServerActivity">
 
     <TextView
         android:id="@+id/subject"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="13dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:textStyle="bold"
+        android:textColor="#0000cc"
         android:textSize="20dp"
-        android:text="Enter Name of subject : " />
+        android:text="Enter Name of subject : "
+        android:layout_above="@+id/branch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/subText"
@@ -41,7 +42,8 @@
         android:layout_alignStart="@+id/subject"
         android:layout_below="@+id/subText"
         android:layout_marginTop="10dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#0000bb"
+        android:textStyle="bold"
         android:textSize="20dp"
         android:text="Enter Branch name : " />
 
@@ -49,9 +51,6 @@
         android:id="@+id/branchInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/subText"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint=""
@@ -59,6 +58,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/branch"
+        android:layout_toRightOf="@+id/branch"
         android:layout_alignLeft="@+id/subText"
         android:layout_alignStart="@+id/subText" />
 
@@ -68,6 +68,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="START SERVER"
+        android:textStyle="bold"
+        android:textColor="#0000AA"
         android:layout_below="@+id/branch"
         android:layout_alignLeft="@+id/branch"
         android:layout_alignStart="@+id/branch"
