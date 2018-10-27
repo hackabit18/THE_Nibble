@@ -40,6 +40,7 @@ public class ServerActivity extends AppCompatActivity implements View.OnClickLis
         super.onDestroy();
         server.onDestroy();
     }
+
     @Override
     public void onClick(View v) {
 
