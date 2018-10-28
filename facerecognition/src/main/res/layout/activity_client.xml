@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00aabb"
+    tools:context="cultoftheunicorn.marvel.ClientActivity">
+
+    <TextView
+        android:id="@+id/IPtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eneter IP: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <EditText
+        android:id="@+id/ipEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/IPtextview"
+        android:layout_toRightOf="@+id/IPtextview"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/portText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IPtextview"
+        android:layout_marginTop="31dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/ipEdit"
+        android:layout_toStartOf="@+id/ipEdit"
+        android:text="PORT : " />
+
+    <EditText
+        android:id="@+id/portEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignTop="@+id/portText"
+        android:layout_alignLeft="@+id/ipEdit"
+        android:layout_alignStart="@+id/ipEdit" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Connect"
+        android:background="#0066aa"
+        android:textSize="30dp"
+        android:layout_below="@+id/portEdit"
+        android:layout_toRightOf="@+id/portText"
+        android:layout_toEndOf="@+id/portText"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#0066aa"
+        android:textSize="30dp"
+        android:text="CLEAR"
+        android:layout_below="@+id/connectButton"
+        android:layout_alignLeft="@+id/connectButton"
+        android:layout_alignStart="@+id/connectButton"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Server response will come here"
+        android:layout_below="@+id/clearButton"
+        android:layout_alignLeft="@+id/clearButton"
+        android:layout_alignStart="@+id/clearButton" />
+
+
+</RelativeLayout>
